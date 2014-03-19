@@ -1,0 +1,13 @@
+[
+    {
+        "caption": "PHPSpec: Run",
+        "command": "simple_php_spec"
+    },
+    {
+        "caption": "PHPSpec: Run with params",
+        "command": "simple_php_spec",
+        "args": {
+            "params": true
+        }
+    }
+]

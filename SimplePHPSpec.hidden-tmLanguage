@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>bundleUUID</key>
+  <string>72174d10-bb12-11e0-962b-113698326194</string>
+  <key>name</key>
+  <string>SimplePhpSpec</string>
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>comment</key>
+      <string>test pass</string>
+      <key>match</key>
+      <string>100%</string>
+      <key>name</key>
+      <string>test.pass</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>test failed</string>
+      <key>match</key>
+      <string>\d+ broken</string>
+      <key>name</key>
+      <string>test.fail</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>test failed</string>
+      <key>match</key>
+      <string>does not exist</string>
+      <key>name</key>
+      <string>test.fail</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>color info</string>
+      <key>match</key>
+      <string>\d+ specs</string>
+      <key>name</key>
+      <string>test.info</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>color info</string>
+      <key>match</key>
+      <string>\d+ examples</string>
+      <key>name</key>
+      <string>test.info</string>
+    </dict>
+  </array>
+  <key>scopeName</key>
+  <string>tests.php</string>
+  <key>uuid</key>
+  <string>72174d10-bb12-11e0-962b-113698326194</string>
+</dict>
+</plist>
