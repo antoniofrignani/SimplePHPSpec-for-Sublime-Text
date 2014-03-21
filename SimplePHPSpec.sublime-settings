@@ -1,3 +1,4 @@
 {
-	"phpspec_path": "phpspec"
+	"phpspec_path": "phpspec",
+        "phpspec_default_args": ["--no-ansi",  "--format=dot"]
 }
