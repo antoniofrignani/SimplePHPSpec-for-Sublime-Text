@@ -28,14 +28,13 @@ class SimplePhpSpecCommand(sublime_plugin.WindowCommand):
 
     def run(self, *args, **kwargs):
         try:
-            # The first folder needs to be the Laravel Project
+            # The first folder needs to be the root of a project
             settings = sublime.load_settings('SimplePHPSpec.sublime-settings')
             self.phpspec_path = settings.get('phpspec_path')
             self.PROJECT_PATH = self.window.folders()[0]
             self.params = kwargs.get('params', False)
             default_settings = ['run'] + settings.get('phpspec_default_args')
-            default_settings = ['{0} '.format(elem) for elem in default_settings]
-            self.args = [self.phpspec_path, default_settings]
+            self.args = [self.phpspec_path] + default_settings
             if self.params is True:
                 self.window.show_input_panel('Params:', '', self.on_params, None, None)
             else:
