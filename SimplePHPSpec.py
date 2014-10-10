@@ -30,7 +30,11 @@ class SimplePhpSpecCommand(sublime_plugin.WindowCommand):
         try:
             # The first folder needs to be the Laravel Project
             settings = sublime.load_settings('SimplePHPSpec.sublime-settings')
-            self.phpspec_path = settings.get('phpspec_path')
+            project_settings = sublime.active_window().active_view().settings().get("SimplePHPSpec")
+            if project_settings is None:
+                project_settings = {}
+
+            self.phpspec_path = project_settings.get('phpspec_path', settings.get('phpspec_path'))
             self.PROJECT_PATH = self.window.folders()[0]
             self.params = kwargs.get('params', False)
             default_settings = ['run'] + settings.get('phpspec_default_args')
