@@ -26,7 +26,7 @@ Example:
 ```
 
 ### Notes:
-- If you want the command to pick up your custom phpspec.yml configuration file, it needs to been in the root folder of your project in the sidebar.
+- If you want the command to pick up your custom phpspec.yml configuration file, it needs to be in the root folder of your project in the sidebar.
 - You need to insert in the Sublime Text user settings `"show_panel_on_build": true` or use `Tools/Build Results/Show Build Results` menu item for view results.
 
 ### Donate:
